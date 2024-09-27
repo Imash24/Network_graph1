@@ -1,0 +1,10 @@
+services:
+  app:
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - graph_data:/usr/src/app/data
+
+volumes:
+  graph_data:
